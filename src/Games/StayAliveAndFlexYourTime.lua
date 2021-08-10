@@ -1,5 +1,3 @@
-local p = {}
-
 local mt = getrawmetatable(game)
 setreadonly(mt,false)
 local backup = mt.__namecall
@@ -33,5 +31,3 @@ end)
 Section:NewSlider("Walkspeed", "SliderInfo", 50, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
     Character.Humanoid.WalkSpeed = s
 end)
-
-return p
