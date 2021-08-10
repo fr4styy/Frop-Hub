@@ -4,7 +4,8 @@ for i,v in pairs(Games) do
     print(i .. v)
     if game.PlaceId == v then
         print("test")
-        require(script.Games.StayAliveAndFlexYourTime)
+        local Game = require(script.Games[i])
+        Game:Init()
     end
 end
 print("finish")
