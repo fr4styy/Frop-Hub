@@ -35,5 +35,6 @@ local function a:Init()
 	Section:NewSlider("Walkspeed", "SliderInfo", 50, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
 		Character.Humanoid.WalkSpeed = s
 	end)
+	print("ran")
 end
 return a
