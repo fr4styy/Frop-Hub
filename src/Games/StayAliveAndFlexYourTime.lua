@@ -36,3 +36,4 @@ local function a:Init()
 		Character.Humanoid.WalkSpeed = s
 	end)
 end
+return a
